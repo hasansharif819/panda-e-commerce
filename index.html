@@ -8,41 +8,46 @@
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- header part start  -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="" width="50" height="30" class="d-inline-block align-text-top">
-              </a>
-              <form class="d-flex">
-                <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">              </form>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Backpacks</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
-                  </li>
-                  
-                </ul>
-               
-              </div>
+      <!-- Navigation  -->
+      <section class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="" width="50" height="30" class="d-inline-block align-text-top">
+            </a>
+            <form class="d-flex">
+              <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">              </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#Shoes">Shoes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#Backpack">Backpacks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#Subscribe">Subscribe</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-          <section class="containe bg-secondary">
+          </div>
+        </nav>
+      </section>
+        
+          <!-- carousel Section  -->
+          <section class="container carousel-1">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -99,7 +104,7 @@
     <!-- main part start  -->
     <main>
         <!-- Categories Section  -->
-        <section class="container my-5">
+        <section class="container my-5 categories-1">
                 <div class="row d-flex justify-content-between">
                   <div class="col-lg-3 col-md-6 col-12 bg-success me-4">
                    <div class="d-flex align-items-center justify-content-between">
@@ -110,7 +115,7 @@
                     </div>
                   </div>
                    </div>
-                  <div class="col-lg-3 col-md-6 col-12 bg-success me-4">
+                  <div class="col-lg-3 col-md-6 col-12 bg-warning me-4">
                     <div class="d-flex align-items-center justify-content-between">
                     <div class="p-3"><h2 class="text-white">Bag</h2>
                     </div>
@@ -119,7 +124,7 @@
                     </div>
                   </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-12 bg-success me-4">
+                  <div class="col-lg-3 col-md-6 col-12 bg-info me-4">
                     <div class="d-flex align-items-center justify-content-between">
                     <div class="p-3"><h2 class="text-white">Shoes</h2>
                     </div>
@@ -130,7 +135,7 @@
                   </div>
                 </div>
         </section>
-        <section class="container">
+        <section class="container" id="Shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -139,10 +144,10 @@
                     <div class="card-body">
                       <h5 class="card-title">Rebook Dart Men Shoes</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <h5>$910</h5>
+                      <h5 class="text-info">$910</h5>
                     </div>
                     <div class="m-3">
-                        <button class="btn btn-warning">Buy Now</button>
+                        <button class="btn button1">Buy Now</button>
                         </div>
                   </div>
                 </div>
@@ -152,10 +157,10 @@
                     <div class="card-body">
                       <h5 class="card-title">Rebook Pump</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <h5>$990</h5>
+                      <h5 class="text-info">$990</h5>
                     </div>
                     <div class="m-3">
-                      <button class="btn btn-warning">Buy Now</button>
+                      <button class="btn button1">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -165,16 +170,17 @@
                     <div class="card-body">
                       <h5 class="card-title">Rebook All Tarrien</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <h5>$690</h5>
+                      <h5 class="text-info">$690</h5>
                     </div>
                     <div class="m-3">
-                      <button class="btn btn-warning">Buy Now</button>
+                      <button class="btn button1">Buy Now</button>
                     </div>
                   </div>
                 </div>
               </div>
         </section>
-        <section class="container">
+        <!-- backpack section  -->
+        <section class="container my-5" id="Backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -183,10 +189,10 @@
                     <div class="card-body">
                       <h5 class="card-title">Red Backpack</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <h5>$1050</h5>
+                      <h5 class="text-info">$1050</h5>
                     </div>
                     <div class="m-3">
-                        <button class="btn btn-warning">Buy Now</button>
+                        <button class="btn button1">Buy Now</button>
                         </div>
                   </div>
                 </div>
@@ -196,10 +202,10 @@
                     <div class="card-body">
                       <h5 class="card-title">Blue Backpack</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <h5>$980</h5>
+                      <h5 class="text-info">$980</h5>
                     </div>
                     <div class="m-3">
-                      <button class="btn btn-warning">Buy Now</button>
+                      <button class="btn button1">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -209,19 +215,31 @@
                     <div class="card-body">
                       <h5 class="card-title">Black Backpack</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <h5>$890</h5>
+                      <h5 class="text-info">$890</h5>
                     </div>
                     <div class="m-3">
-                      <button class="btn btn-warning">Buy Now</button>
+                      <button class="btn button1">Buy Now</button>
                     </div>
                   </div>
                 </div>
               </div>
         </section>
+        <!-- subscriber  -->
+        <section style="height: 400px;" class="container rounded-3 d-flex justify-content-center align-items-center bg-info" id="Subscribe">
+          <div>
+            <h1>LET'S STAY IN TOUCH</h1>
+            <P>Get updates on sales specials and more</P>
+            <input type="email" name="" placeholder="Enter Your Email" id="">
+            <br>
+            <button class="btn button1">SUBMIT</button>
+          </div>
+        </section>
     </main>
     <!-- footer start  -->
     <footer>
-
+      <section class="container bg-black text-white my-5">
+        <p class="text-center"><small>Copyright Warning.Allrights Reserved</small></p>
+      </section>
     </footer>
     <!-- bootstrap script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
